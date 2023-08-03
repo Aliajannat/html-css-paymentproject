@@ -1,0 +1,254 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    ;
+}
+/* write your CSS here */
+
+body{
+    color: white;
+    background-color: black;
+}
+/* Header start */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 9% ;
+    background: transparent;
+    z-index: 1000;
+}
+/* Header ends */
+/* navbar start */
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    list-style-type: none;
+    text-decoration: none;
+    list-style: none;
+    margin: 0 20px;
+    padding: 4px;
+    color: rgb(255, 249, 249);
+    font-size: 17px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: all .50s ease;
+}
+.navbar a:hover{
+    margin: 2px;
+    text-decoration: none;
+    display: inline-block;
+   width: 100%;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    background: #efdeff;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: all .50s ease;
+}
+#menu-icon{
+font-size: 34px;
+cursor: pointer;
+z-index: 10001;
+display: none;
+}
+.top-btn{
+    margin: 2px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 9px 25px;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    background: #efdeff;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: all .50s ease;
+
+}
+
+.btn{
+    
+    margin: 2px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 9px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    background: #efdeff;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: all .50s ease;
+
+}
+/* navbar ends */
+
+
+/* section start */
+section{
+
+    padding: 0 17%;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.hero-text h5{
+    
+    color: #7a7676;
+    margin-bottom: 30px;
+}
+
+.hero-text h1{
+font-size: 40px;
+
+margin: 0 0 30px;
+    
+}
+.hero-image img{
+margin-top: 20px;
+margin-left: 50px;
+    height: auto;
+ 
+}
+
+/* section ends */
+@media (max-width:1760px) {
+
+    header{
+        padding: 14px 4%;
+    }
+    section{
+        padding: 0 13%;
+    }
+    
+}
+
+@media (max-width:1560px) {
+
+    .hero-text h1{
+        font-size: 40px;
+        margin: 0 0 20px;
+
+    }
+    
+}
+
+@media(max-width:1300px){
+    section{
+        padding:0 10%;
+    }
+}
+
+
+@media(max-width:1060px){
+  .hero{
+    grid-template-columns: 1fr;
+  }
+  .hero-image {
+    text-align: start;
+  }
+  .hero-image img{
+    width: 550px;
+    height: auto;
+  }
+  .hero-text{
+
+    padding-top: 80px;
+    text-align: start;
+  }
+  .hero-text h5{
+    margin-bottom: 15px;
+    text-align: start;
+  }
+  
+}
+
+@media (max-width:960px) {
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: #000000;
+        transition: all .50s ease;
+    }
+    .navbar a{
+        display: block;
+        padding: 15px;
+        font-size:  22px;
+    }
+
+    .top-btn2{
+        display: none;
+    }
+    .btn{
+        margin-right: 310px;
+    }
+    
+  .navbar.active{
+    right: 0;
+  }
+}
+
+@media (max-width:750px){
+    .hero-image img{
+        width: 450px;
+        height: auto;
+    }
+}
+
+@media (max-width:570px){
+    .hero-text h1{
+        font-size: 70px;
+        text-align: start;
+    }
+    .hero-text h5{
+        font-size: 20px;
+    }
+    .hero{
+        gap: 10px;
+    }
+}
+
+@media (max-width:500px){
+    .hero-image img{
+        width: 380px;
+        height: auto;
+
+    }
+    .hero-text h5{
+        margin-top:40px ;
+        font-size: 10px;
+        text-align: start
+    }
+    .hero-text h1{
+        font-size: 52px;
+        text-align: start;
+    }
+
+}
